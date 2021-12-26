@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  position: fixed;
+  top: 3rem;
+  left: -3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  transform: translateX(-100%);
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: unHide, appear;
+  animation-delay: 1s;
+}
+
+.nav_animation_mobile {
+  animation-delay: 0s;
+}
+
+@media (max-width: 499px) {
+  nav {
+    top: 3.9rem;
+    left: 0;
+    border-radius: 0 0.4rem 0.4rem 0;
+    background-color: var(--dark-modal);
+  }
+}

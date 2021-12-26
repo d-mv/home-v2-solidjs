@@ -1,0 +1,50 @@
+.photo_belt__card {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  user-select: none;
+  background-color: #000;
+  box-shadow: var(--shadow);
+  animation: appear 1s ease-in-out 0.5s forwards;
+  transition: var(--transition);
+}
+
+.photo_belt__card:first-of-type {
+  margin-left: 0;
+}
+.photo_belt__card:last-of-type {
+  margin-right: 0;
+}
+.photo_belt__card:hover {
+  filter: grayscale(0);
+}
+
+@media (min-width: 500px) {
+  .photo_belt__card {
+    border-radius: 0.4rem;
+    margin: 0 1rem;
+    filter: grayscale(1);
+  }
+}
+@media (prefers-color-scheme: light) {
+  .photo_belt__card:hover {
+    box-shadow: var(--shadow-active);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .photo_belt__card:hover {
+    box-shadow: var(--shadow-active-DM);
+  }
+}
+
+.photo_belt__container {
+  height: 20%;
+  width: 100%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+}

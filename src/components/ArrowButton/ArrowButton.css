@@ -1,0 +1,32 @@
+.arrow_button__container {
+  padding: 0 0.5rem;
+  border-radius: 0.4rem;
+  transition: var(--transition);
+}
+
+.arrow_button__container svg {
+  width: 2rem;
+  height: 2rem;
+}
+.arrow_button__container:first-of-type {
+  margin-inline-start: -0.5rem;
+  margin-inline-end: 0.5rem;
+}
+.arrow_button__container:last-of-type {
+  margin-inline-start: 0.5rem;
+  margin-inline-end: -0.5rem;
+}
+@media (hover: hover) {
+  @media (prefers-color-scheme: dark) {
+    .arrow_button__container:hover {
+      background-color: var(--white-trans);
+      color: var(--dark);
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    .arrow_button__container:hover {
+      background-color: var(--dark);
+      color: var(--white);
+    }
+  }
+}

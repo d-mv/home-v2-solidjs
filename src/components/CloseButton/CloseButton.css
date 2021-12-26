@@ -1,0 +1,14 @@
+.close_button__container {
+  font: var(--text-button);
+  color: var(--white-trans);
+  text-shadow: var(--text-shadow);
+}
+
+.close_button__container:hover {
+  color: white;
+}
+
+.close_button__container:active {
+  color: white;
+  transform: scale(0.97);
+}

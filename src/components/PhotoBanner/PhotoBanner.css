@@ -1,0 +1,52 @@
+.photo_banner__container {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  background-color: white;
+  background-size: cover;
+  user-select: none;
+  background-color: #000;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+@media (prefers-color-scheme: light) {
+  .photo_banner__container {
+    animation: shadowDrop 0.5s ease-in-out 0s forwards,
+      stretch 0.5s ease-in-out 0s forwards;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .photo_banner__container {
+    animation: shadowDropDM 0.5s ease-in-out 0s forwards,
+      stretch 0.5s ease-in-out 0s forwards;
+  }
+}
+
+.photo_banner__details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: flex-end;
+  background-color: var(--black30);
+  padding: 0.5rem 0;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.photo_banner__details p {
+  color: var(--white);
+}
+
+.photo_banner__title {
+  font: var(--title);
+  padding: 0.5rem 1rem 0.1rem 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.photo_banner__location {
+  font: var(--location);
+  padding: 0.1rem 1rem 0.5rem 1rem;
+}

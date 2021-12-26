@@ -1,0 +1,29 @@
+.app_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 499px) {
+  main {
+    left: 0;
+    padding: 2.5rem 0;
+  }
+}
+@media (min-width: 500px) {
+  main {
+    left: 4rem;
+    padding: 2rem 0;
+  }
+}
